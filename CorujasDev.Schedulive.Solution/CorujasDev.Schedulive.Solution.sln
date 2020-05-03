@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Domain", "01 - Domain", "{86522447-2DD1-4E62-9204-5D7C05843A1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Infra", "02 - Infra", "{FA0090E3-3F6B-4E50-BA2C-8790D4FA2567}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Core", "03 - Core", "{BD378A8C-8D68-40C8-9BF6-D4AB8188232E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Application", "04 - Application", "{8C941BFD-B753-4DE4-BEBB-CCB89104579B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - WebApps", "05 - WebApps", "{58F4A51B-3C88-463A-97EF-04E3DF5766A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 - Tests", "06 - Tests", "{81F33BFB-3312-4116-A56B-BEE09FFD365A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorujasDev.Schedulive.Domain", "src\CorujasDev.Schedulive.Domain\CorujasDev.Schedulive.Domain.csproj", "{8BC8D93A-87FB-4472-9268-8868AD3BA188}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorujasDev.Schedulive.Core", "src\CorujasDev.Schedulive.Core\CorujasDev.Schedulive.Core.csproj", "{8E5D0C67-32C7-4E0B-A042-16F46052B49D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BC8D93A-87FB-4472-9268-8868AD3BA188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BC8D93A-87FB-4472-9268-8868AD3BA188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BC8D93A-87FB-4472-9268-8868AD3BA188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BC8D93A-87FB-4472-9268-8868AD3BA188}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E5D0C67-32C7-4E0B-A042-16F46052B49D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E5D0C67-32C7-4E0B-A042-16F46052B49D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E5D0C67-32C7-4E0B-A042-16F46052B49D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E5D0C67-32C7-4E0B-A042-16F46052B49D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8BC8D93A-87FB-4472-9268-8868AD3BA188} = {86522447-2DD1-4E62-9204-5D7C05843A1D}
+		{8E5D0C67-32C7-4E0B-A042-16F46052B49D} = {BD378A8C-8D68-40C8-9BF6-D4AB8188232E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {499FBDC1-1ACD-4BE2-8418-9DDDB027B59C}
+	EndGlobalSection
+EndGlobal
