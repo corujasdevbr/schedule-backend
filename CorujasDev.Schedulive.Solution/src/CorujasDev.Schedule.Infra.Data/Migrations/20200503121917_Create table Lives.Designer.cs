@@ -4,14 +4,16 @@ using CorujasDev.Schedule.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CorujasDev.Schedule.Infra.Data.Migrations
 {
     [DbContext(typeof(ScheduliveContext))]
-    partial class ScheduliveContextModelSnapshot : ModelSnapshot
+    [Migration("20200503121917_Create table Lives")]
+    partial class CreatetableLives
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

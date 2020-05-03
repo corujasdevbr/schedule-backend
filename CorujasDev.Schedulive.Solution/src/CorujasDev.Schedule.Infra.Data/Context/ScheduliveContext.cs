@@ -10,6 +10,7 @@ namespace CorujasDev.Schedule.Infra.Data.Context
     {
         public DbSet<UserDomain> Users { get; set; }
         public DbSet<CategoryDomain> Categories { get; set; }
+        public DbSet<LiveDomain> Lives { get; set; }
 
         public ScheduliveContext()
         {

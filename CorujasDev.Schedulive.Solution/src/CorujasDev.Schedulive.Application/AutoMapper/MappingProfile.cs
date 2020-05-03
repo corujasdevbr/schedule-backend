@@ -11,7 +11,7 @@ namespace CorujasDev.Schedulive.Application.AutoMapper
             CreateMap<UserDomain, UserDTO>().ReverseMap();
 
             CreateMap<CategoryDomain, CategoryDTO>().ReverseMap();
-            CreateMap<CategoryDomain, CreateCategoryDTO>().ReverseMap();
+            CreateMap<LiveDomain, LiveDTO>().ReverseMap();
         }
     }
 }

@@ -29,22 +29,22 @@ namespace CorujasDev.Schedule.Infra.Data.Repositories
 
         public IQueryable<CategoryDomain> FindBy(Expression<Func<CategoryDomain, bool>> predicate)
         {
-            return _context.Categories.AsNoTracking().Where(predicate);
+            return _context.Categories.AsNoTracking().Include(x => x.Lives).Where(predicate);
         }
 
         public IQueryable<CategoryDomain> GetAll()
         {
-            return _context.Categories.AsNoTracking().AsQueryable();
+            return _context.Categories.AsNoTracking().Include(x => x.Lives).AsQueryable();
         }
 
         public CategoryDomain GetById(Guid id)
         {
-            return _context.Categories.AsNoTracking().FirstOrDefault(x => x.Id == id);
+            return _context.Categories.AsNoTracking().Include(x => x.Lives).FirstOrDefault(x => x.Id == id);
         }
 
         public CategoryDomain GetByName(string name)
         {
-            return _context.Categories.AsNoTracking().FirstOrDefault(x => x.Name == name);
+            return _context.Categories.AsNoTracking().Include(x => x.Lives).FirstOrDefault(x => x.Name == name);
         }
     }
 }

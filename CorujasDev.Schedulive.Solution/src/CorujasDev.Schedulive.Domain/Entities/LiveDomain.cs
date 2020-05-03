@@ -18,10 +18,10 @@ namespace CorujasDev.Schedulive.Domain.Entities
         {
 
             AddNotifications(new Contract()
-                .IsNullOrEmpty(title, "Title", "Title is required")
-                .IsNullOrEmpty(thumbnail, "Thumbnail", "Thumbnail is required")
-                .IsNullOrEmpty(description, "Description", "Description is required")
-                .IsNullOrEmpty(place, "Place", "Place is required")
+                .IsNotNullOrEmpty(title, "Title", "Title is required")
+                .IsNotNullOrEmpty(thumbnail, "Thumbnail", "Thumbnail is required")
+                .IsNotNullOrEmpty(description, "Description", "Description is required")
+                .IsNotNullOrEmpty(place, "Place", "Place is required")
             );
 
             if (Valid)

@@ -10,7 +10,6 @@ namespace CorujasDev.Schedulive.Domain.Interfaces.Repositories
         #region Read
         IQueryable<LiveDomain> GetAll();
         LiveDomain GetById(Guid id);
-        LiveDomain GetByName(string name);
         IQueryable<LiveDomain> FindBy(Expression<Func<LiveDomain, bool>> predicate);
         #endregion
 

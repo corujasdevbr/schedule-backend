@@ -18,9 +18,11 @@ namespace Corujasdev.Schedulive.Infra.CrossCuting.IoC
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<ILiveRepository, LiveRepository>();
 
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<ILiveService, LiveService>();
         }
     }
 }
