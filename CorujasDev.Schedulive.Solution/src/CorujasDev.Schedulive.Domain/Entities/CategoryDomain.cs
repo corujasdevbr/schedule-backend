@@ -7,7 +7,7 @@ namespace CorujasDev.Schedulive.Domain.Entities
     {
         public string Name { get; private set; }
 
-        public CategoriesDomain(string name)
+        public CategoryDomain(string name)
         {
             AddNotifications(new Contract()
                 .IsNotNullOrEmpty(name, "Firstname", "FirstName is required")

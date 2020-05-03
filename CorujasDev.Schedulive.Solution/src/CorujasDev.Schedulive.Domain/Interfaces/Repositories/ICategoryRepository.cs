@@ -15,8 +15,8 @@ namespace CorujasDev.Schedulive.Domain.Interfaces.Repositories
         #endregion
 
         #region Write
-        void Add(CategoryDomain Category);
-        void Update(CategoryDomain Category);
+        void Add(CategoryDomain category);
+        void Update(CategoryDomain category);
         #endregion
     }
 }
