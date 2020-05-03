@@ -1,0 +1,363 @@
+{
+	"info": {
+		"_postman_id": "7aa8addc-ae01-4ac6-808a-6970080db216",
+		"name": "Schedulive",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Create Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Fernando Henrique Guerra\",\r\n  \"email\": \"colte12@gmail.com\",\r\n  \"password\": \"1234567890\",\r\n  \"typeUser\": \"User\",\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/account/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"account",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\" : \"teste@teste.com\",\n\t\"password\" : \"781723718\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/account/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"account",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ForgoutPassword Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/account/forgoutpassword/DEEAA383-622C-4490-8890-14028F2DE347",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"account",
+								"forgoutpassword",
+								"DEEAA383-622C-4490-8890-14028F2DE347"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "5a6be925-273b-4959-85e2-1fe860513d92",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "d6440d50-2c5c-48f9-a733-bae087d8ad81",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "GetAll Users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImlkIjoiZGVlYWEzODMtNjIyYy00NDkwLTg4OTAtMTQwMjhmMmRlMzQ3Iiwicm9sZSI6IkFkbWluIiwidW5pcXVlX25hbWUiOiJGZXJuYW5kbyBIZW5yaXF1ZSIsIm5iZiI6MTU4ODQ4NzQxMCwiZXhwIjoxNTg4NTczODEwLCJpYXQiOjE1ODg0ODc0MTB9.YlzvkDb1DUVqDDZ1tdgVsLHwyfNLEV6brIq2KYTosqs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Post Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImlkIjoiZGVlYWEzODMtNjIyYy00NDkwLTg4OTAtMTQwMjhmMmRlMzQ3Iiwicm9sZSI6IkFkbWluIiwidW5pcXVlX25hbWUiOiJGZXJuYW5kbyBIZW5yaXF1ZSIsIm5iZiI6MTU4ODQ5MDA0NCwiZXhwIjoxNTg4NTc2NDQ0LCJpYXQiOjE1ODg0OTAwNDR9.ImmUc4QBFojVYczIVv2rrvxEf7EKYTxLVx1HOn8dHe4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"Shows\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/categories/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"categories",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/categories/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"categories",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImlkIjoiZGVlYWEzODMtNjIyYy00NDkwLTg4OTAtMTQwMjhmMmRlMzQ3Iiwicm9sZSI6IkFkbWluIiwidW5pcXVlX25hbWUiOiJGZXJuYW5kbyBIZW5yaXF1ZSIsIm5iZiI6MTU4ODQ5MDA0NCwiZXhwIjoxNTg4NTc2NDQ0LCJpYXQiOjE1ODg0OTAwNDR9.ImmUc4QBFojVYczIVv2rrvxEf7EKYTxLVx1HOn8dHe4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Shows\",\r\n        \"id\": \"65479716-3f2b-4aa9-99ed-8781f9636dbf\",\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/categories/65479716-3f2b-4aa9-99ed-8781f9636dbf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"categories",
+								"65479716-3f2b-4aa9-99ed-8781f9636dbf"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Lives",
+			"item": [
+				{
+					"name": "Post Live",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImlkIjoiZGVlYWEzODMtNjIyYy00NDkwLTg4OTAtMTQwMjhmMmRlMzQ3Iiwicm9sZSI6IkFkbWluIiwidW5pcXVlX25hbWUiOiJGZXJuYW5kbyBIZW5yaXF1ZSIsIm5iZiI6MTU4ODUxMTU4MiwiZXhwIjoxNTg4NTk3OTgyLCJpYXQiOjE1ODg1MTE1ODJ9.KIEuUl-q3aDHAOZ03OBgvdSqaA1YRkx82-TcGSapa-k",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"HUNGRIA\",\r\n  \"thumbnail\": \"https://yt3.ggpht.com/OFsD2hgXdHP4EaaT5b6srKLlrmQ0eC3wISBzKGmUSzdJQ96VN3g4zYzyzhRBONN2bS-PntTNsw=w2560-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj\",\r\n  \"description\": \"Live do Hungria\",\r\n  \"place\": \"youtube.com/OficialHungria\",\r\n  \"dateTime\": \"2020-05-06T19:00:00\",\r\n  \"categoryId\": \"65479716-3f2b-4aa9-99ed-8781f9636dbf\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/lives/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"lives",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById Live",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/lives/0ad3ce1c-74c1-4e8b-b3b1-7d0badb98da0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"lives",
+								"0ad3ce1c-74c1-4e8b-b3b1-7d0badb98da0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAll Lives",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/lives/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"lives",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
