@@ -4,11 +4,11 @@ using System;
 
 namespace CorujasDev.Schedule.Infra.Data.UoW
 {
-    public class UnitOfWord : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly ScheduliveContext _context;
 
-        public UnitOfWord(ScheduliveContext context)
+        public UnitOfWork(ScheduliveContext context)
         {
             _context = context;
         }

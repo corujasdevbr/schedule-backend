@@ -1,6 +1,7 @@
 ﻿using CorujasDev.Schedulive.Core.DomainObjects;
 using Flunt.Notifications;
 using Flunt.Validations;
+using System;
 
 namespace CorujasDev.Schedulive.Domain.Entities
 {
@@ -27,6 +28,11 @@ namespace CorujasDev.Schedulive.Domain.Entities
                 Password = password;
                 TypeUser = typeUser;
             }
+        }
+
+        public void UpdatePassword()
+        {
+            this.Password =  new Random().Next(000000001, 999999999).ToString();
         }
     }
 }

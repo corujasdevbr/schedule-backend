@@ -70,7 +70,29 @@ namespace CorujasDev.Schedulive.Application.Service
             if (user.Password != password)
                 throw new Exception("Password invalid");
 
-            return _mapper.Map<UserDTO>(user);
+            var userDTO = _mapper.Map<UserDTO>(user);
+            
+            return userDTO;
+        }
+
+        public UserDTO ForgoutPassword(Guid id)
+        {
+            var user = _userRepository.GetById(id);
+
+            if (user == null)
+                throw new Exception("User Not Found");
+
+            //Generic Random 
+            user.UpdatePassword();
+
+            _userRepository.Update(user);
+            _uow.Commit();
+
+            //TODO: Enviar Email
+
+            var userDTO = _mapper.Map<UserDTO>(user);
+            
+            return userDTO;
         }
     }
 }

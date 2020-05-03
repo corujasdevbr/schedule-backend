@@ -10,6 +10,7 @@ namespace CorujasDev.Schedulive.Application.Interfaces
         #region Read
         List<UserDTO> GetAll();
         UserDTO GetById(Guid id);
+        UserDTO ForgoutPassword(Guid id);
         UserDTO GetUserByEmailAndPassword(string email, string password);
         #endregion
 
