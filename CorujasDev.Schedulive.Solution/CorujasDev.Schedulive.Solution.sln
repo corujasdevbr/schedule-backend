@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorujasDev.Schedulive.Core"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorujasDev.Schedule.Infra.Data", "src\CorujasDev.Schedule.Infra.Data\CorujasDev.Schedule.Infra.Data.csproj", "{7F3CD9A5-1A65-4810-9B55-26199830E422}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorujasDev.Schedulive.Tests", "tests\CorujasDev.Schedulive.Tests\CorujasDev.Schedulive.Tests.csproj", "{EC3DE557-EEE8-4A48-93B4-2349523E218B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7F3CD9A5-1A65-4810-9B55-26199830E422}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F3CD9A5-1A65-4810-9B55-26199830E422}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F3CD9A5-1A65-4810-9B55-26199830E422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC3DE557-EEE8-4A48-93B4-2349523E218B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3DE557-EEE8-4A48-93B4-2349523E218B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3DE557-EEE8-4A48-93B4-2349523E218B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3DE557-EEE8-4A48-93B4-2349523E218B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{8BC8D93A-87FB-4472-9268-8868AD3BA188} = {86522447-2DD1-4E62-9204-5D7C05843A1D}
 		{8E5D0C67-32C7-4E0B-A042-16F46052B49D} = {BD378A8C-8D68-40C8-9BF6-D4AB8188232E}
 		{7F3CD9A5-1A65-4810-9B55-26199830E422} = {FA0090E3-3F6B-4E50-BA2C-8790D4FA2567}
+		{EC3DE557-EEE8-4A48-93B4-2349523E218B} = {81F33BFB-3312-4116-A56B-BEE09FFD365A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {499FBDC1-1ACD-4BE2-8418-9DDDB027B59C}
