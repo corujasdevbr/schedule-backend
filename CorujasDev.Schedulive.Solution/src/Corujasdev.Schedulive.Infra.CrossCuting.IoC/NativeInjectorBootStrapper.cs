@@ -20,6 +20,7 @@ namespace Corujasdev.Schedulive.Infra.CrossCuting.IoC
             services.AddScoped<ICategoryRepository, CategoryRepository>();
 
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ICategoryService, CategoryService>();
         }
     }
 }

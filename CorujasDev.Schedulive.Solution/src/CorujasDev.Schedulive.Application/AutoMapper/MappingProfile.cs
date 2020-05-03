@@ -9,6 +9,9 @@ namespace CorujasDev.Schedulive.Application.AutoMapper
         public MappingProfile()
         {
             CreateMap<UserDomain, UserDTO>().ReverseMap();
+
+            CreateMap<CategoryDomain, CategoryDTO>().ReverseMap();
+            CreateMap<CategoryDomain, CreateCategoryDTO>().ReverseMap();
         }
     }
 }
