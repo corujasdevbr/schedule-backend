@@ -15,9 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - WebApps", "05 - WebApp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 - Tests", "06 - Tests", "{81F33BFB-3312-4116-A56B-BEE09FFD365A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorujasDev.Schedulive.Domain", "src\CorujasDev.Schedulive.Domain\CorujasDev.Schedulive.Domain.csproj", "{8BC8D93A-87FB-4472-9268-8868AD3BA188}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorujasDev.Schedulive.Domain", "src\CorujasDev.Schedulive.Domain\CorujasDev.Schedulive.Domain.csproj", "{8BC8D93A-87FB-4472-9268-8868AD3BA188}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorujasDev.Schedulive.Core", "src\CorujasDev.Schedulive.Core\CorujasDev.Schedulive.Core.csproj", "{8E5D0C67-32C7-4E0B-A042-16F46052B49D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorujasDev.Schedulive.Core", "src\CorujasDev.Schedulive.Core\CorujasDev.Schedulive.Core.csproj", "{8E5D0C67-32C7-4E0B-A042-16F46052B49D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorujasDev.Schedule.Infra.Data", "src\CorujasDev.Schedule.Infra.Data\CorujasDev.Schedule.Infra.Data.csproj", "{7F3CD9A5-1A65-4810-9B55-26199830E422}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8E5D0C67-32C7-4E0B-A042-16F46052B49D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E5D0C67-32C7-4E0B-A042-16F46052B49D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E5D0C67-32C7-4E0B-A042-16F46052B49D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F3CD9A5-1A65-4810-9B55-26199830E422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F3CD9A5-1A65-4810-9B55-26199830E422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F3CD9A5-1A65-4810-9B55-26199830E422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F3CD9A5-1A65-4810-9B55-26199830E422}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,6 +46,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{8BC8D93A-87FB-4472-9268-8868AD3BA188} = {86522447-2DD1-4E62-9204-5D7C05843A1D}
 		{8E5D0C67-32C7-4E0B-A042-16F46052B49D} = {BD378A8C-8D68-40C8-9BF6-D4AB8188232E}
+		{7F3CD9A5-1A65-4810-9B55-26199830E422} = {FA0090E3-3F6B-4E50-BA2C-8790D4FA2567}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {499FBDC1-1ACD-4BE2-8418-9DDDB027B59C}

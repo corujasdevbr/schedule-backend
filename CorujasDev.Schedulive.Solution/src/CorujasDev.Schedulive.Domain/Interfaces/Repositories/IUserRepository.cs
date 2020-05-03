@@ -10,12 +10,13 @@ namespace CorujasDev.Schedulive.Domain.Interfaces.Repositories
         #region Read
         IQueryable<UserDomain> GetAll();
         UserDomain GetById(Guid id);
+        UserDomain GetByEmail(string email);
         IQueryable<UserDomain> FindBy(Expression<Func<UserDomain, bool>> predicate);
         #endregion
 
         #region Write
-        void Add(UserDomain car);
-        void Update(UserDomain car);
+        void Add(UserDomain user);
+        void Update(UserDomain user);
         #endregion
     }
 }

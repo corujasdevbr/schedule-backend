@@ -1,7 +1,11 @@
-﻿namespace CorujasDev.Schedulive.Core.Data
+﻿using System;
+
+namespace CorujasDev.Schedulive.Core.Data
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
         bool Commit();
+
+        bool RollBack();
     }
 }
